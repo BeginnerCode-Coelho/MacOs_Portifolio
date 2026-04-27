@@ -39,7 +39,7 @@ export default function WindowWrapper (Component, windowKey) {
     <Component {...props} />
    </section>
   };
-  Wrapped.displayName = `WindownWrapper(${Component.displayName || Component.name || "Component"}`
+  Wrapped.displayName = `WindowWrapper(${Component.displayName || Component.name || "Component"})`
 
   return Wrapped;
 }; 
