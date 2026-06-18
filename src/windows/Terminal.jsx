@@ -3,7 +3,13 @@ import { techStack } from "#constants";
 import WindowWrapper from "#hoc/WindowWrapper";
 import { Check, Flag } from "lucide-react";
 
- export function Terminal() {
+ /**
+ * Render a terminal-style "Tech Stack" view listing categories and technologies with window controls and a footer.
+ *
+ * Renders a header with window controls and title, a prompt line, a labeled list of categories (each prefixed with a check icon) and their technologies (comma-separated), and a footer showing load status and render time.
+ * @returns {JSX.Element} The rendered Terminal UI.
+ */
+export function Terminal() {
   return ( <>
   <div id="window-header">
     <WindowControls target="terminal" />
